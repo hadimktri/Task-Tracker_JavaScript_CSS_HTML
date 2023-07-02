@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO App</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preload" href="./assets/images/icon-check.svg" as="image" type="image/svg+xml" crossorigin="anonymous">
+  <script src="./js/functions.js" defer></script>
+  <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+  <header class="card">
+    <h1 class="title">Todo List</h1>
+    <button id="themeSwitcher">
+      <img src="./assets/images/icon-sun.png" alt="Change color theme" />
+    </button>
+  </header>
+  <main>
+    <div class="card add">
+      <div class="txtContainer">
+        <label for="addTodo">Add</label>
+        <input type="text" class="txt-input" placeholder="Add a new todo" spellcheck="false" autocomplete="off"
+          id="addTodo" />
+      </div>
+      <div class="checkBoxDiv">
+        <button id="addBtn">+</button>
+      </div>
+    </div>
+    <ul class="todos"> </ul>
+    <div class="card stat">
+      <p class="corner">Remaining: <span id="leftItems">0</span></p>
+      <div class="filter">
+        <button id="all" class="on">All</button>
+        <button id="active">Active</button>
+        <button id="completed">completed</button>
+      </div>
+      <div class="corner">
+        <button id="clearCompleted">Delete all Completed</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>To customize the list, drag and drop the todos</p>
+  </footer>
+</body>
+
+</html>
